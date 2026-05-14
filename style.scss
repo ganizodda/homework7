@@ -19,6 +19,13 @@
     align-items: center;
     gap: $sizegap;
 }
+@mixin text{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
 
 body{
     background-color: #252B42;
@@ -100,6 +107,43 @@ header{
 .menu_mobile{
     display: none;
 }
+.text{
+    p{
+        color: grey;
+        margin-top: 20px
+    }
+    h1{
+        font-size: 40px
+    }
+    @include text()
+}
+
+.sec2{
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .a1{
+        width: 400px;
+        height: 160px;
+        padding: 20px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 500px){
     header{
@@ -135,3 +179,4 @@ header{
         }        
     }
 }
+
