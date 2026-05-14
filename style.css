@@ -176,6 +176,50 @@ header .icons {
   align-items: center;
 }
 
+.sec4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.sec4 .a3 {
+  width: 550px;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2px;
+  color: #252B42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sec4 .a3 .a4 {
+  width: 250px;
+  height: 150px;
+}
+.sec4 .a3 .a4 h2 {
+  color: #23A6F0;
+}
+.sec4 .a3 .a4 p {
+  margin-top: 30px;
+}
+.sec4 .a3 .a5 {
+  width: 250px;
+  height: 150px;
+}
+.sec4 .a3 .a5 h1 {
+  color: #23A6F0;
+}
+.sec4 .a3 .a5 button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #23A6F0;
+  margin-top: 30px;
+}
+
 @media (max-width: 500px) {
   header nav, header div {
     display: none;
@@ -213,5 +257,15 @@ header .icons {
   .img .a2 {
     margin: auto;
     margin-bottom: 20px;
+  }
+  .sec4 {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .sec4 .a3 {
+    margin-top: 30px;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

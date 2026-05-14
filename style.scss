@@ -115,7 +115,7 @@ header{
     h1{
         font-size: 40px
     }
-    @include text()
+    @include text();
 }
 
 .sec2{
@@ -172,6 +172,45 @@ header{
         align-items: center;
     }
 }
+.sec4{
+    @include container();
+    .a3{
+        width: 550px;
+        height: 250px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 2px;
+        color: #252B42;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        .a4{
+            width: 250px;
+            height: 150px;
+            
+            h2{
+                color: #23A6F0;
+            }
+            p{
+                margin-top: 30px;
+            }
+        }
+        .a5{
+        width: 250px;
+        height: 150px;
+            h1{
+                color: #23A6F0;
+            }
+            button{
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #23A6F0;
+                margin-top: 30px;
+            }
+        }
+    }
+}
 
 
 
@@ -220,6 +259,16 @@ header{
         .a2{
             margin: auto;
             margin-bottom: 20px;
+        }
+    }
+    .sec4{
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        .a3{
+            margin-top: 30px;
+            width: 100%;
         }
     }
 }
